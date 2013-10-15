@@ -74,11 +74,7 @@ var MiddleWrap = React.createClass({
     return (
       <div class="middle">
         <SearchForm />
-        <div class="test"></div>
-
-        <div class="test">
-          <ul class="unstyled users">{usersList}</ul>
-        </div>
+        <ul class="unstyled users">{usersList}</ul>
       </div>
       );
   }
@@ -90,9 +86,9 @@ var SearchForm = React.createClass({
     return (
       <form class="form search" action="#">
         <div class="search-wrap pull-left">
-          <a class="icon" href="#"></a>
+          <a class="icon" href="#"><i class="glyph-search"></i></a>
           <input type="text" id="search" placeholder="Search names, companies, positions" />
-          <a class="clear-filter js-clear-filter" href="javascript:void(0);">×</a>
+          <a class="clear-filter js-clear-filter" href="#">×</a>
         </div>
       </form>
       );
@@ -130,8 +126,8 @@ var BottomWrap = React.createClass({
           <span>Who in your network is attending?</span>
         </div>
         <div class="social">
-          <a class="js-facebook" href="#"></a>
-          <a class="js-linkedin" href="#"></a>
+          <a class="js-facebook" href="#"><i class="glyph-facebook"></i></a>
+          <a class="js-linkedin" href="#"><i class="glyph-linkedin"></i></a>
         </div>
       </div>
       );
@@ -142,5 +138,3 @@ React.renderComponent(
   <WidgetWrap data={data} />,
   document.getElementById('content')
 );
-
-

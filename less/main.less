@@ -5,6 +5,7 @@
 //@import 'bootstrap/_responsive-utilities';
 //@import 'bootstrap/_buttons';
 @import 'bootstrap/_forms';
+@import '_icons';
 @import '_variables';
 @import '_mixins';
 @import '_scrollbar';
@@ -85,12 +86,10 @@ html, body{
         }
       }
       a.icon{
-        width: 15px;
-        height: 15px;
-        background: url(../img/search.png) no-repeat;
         float: left;
-        margin-top: 9px;
+        margin-top: 6px;
         margin-right: 4px;
+        color: #5e5e5e;
       }
     }
   }
@@ -256,29 +255,20 @@ html, body{
       }
       a{
         display: inline-block;
-        background-image: url(../img/social.png);
-        background-repeat: no-repeat;
         width: 24px;
         height: 24px;
         vertical-align: middle;
         margin-right: 5;
-        &.js-gmail{
-          background-position: 0 0;
-          &:hover{
-            background-position: 0 -26px;
-          }
+        background-color: #00aeef;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        .border-radius(3px);
+        &:hover{
+          background-color: #308bcc;
         }
-        &.js-facebook{
-          background-position: -26px 0;
-          &:hover{
-            background-position: -26px -26px;
-          }
-        }
-        &.js-linkedin{
-          background-position: -52px 0;
-          &:hover{
-            background-position: -52px -26px;
-          }
+        i{
+          line-height: 24px;
         }
       }
     }
